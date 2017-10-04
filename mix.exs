@@ -1,7 +1,7 @@
 defmodule Money.Mixfile do
   use Mix.Project
 
-  @version "1.2.3"
+  @version "1.2.4"
   @github_url "https://github.com/steveops/money"
 
   def project do
