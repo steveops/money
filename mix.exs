@@ -1,16 +1,16 @@
 defmodule Money.Mixfile do
   use Mix.Project
 
-  @version "1.2.1"
-  @github_url "https://github.com/liuggio/money"
+  @version "1.2.3"
+  @github_url "https://github.com/steveops/money"
 
   def project do
-    [app: :money,
-     name: "Money",
+    [app: :money_man,
+     name: "MoneyMan",
      version: @version,
      elixir: "~> 1.0",
      deps: deps(),
-     source_url: "https://github.com/liuggio/money",
+     source_url: @github_url,
      docs: fn ->
        [source_ref: "v#{@version}",
         canonical: "http://hexdocs.pm/money",
@@ -44,13 +44,14 @@ defmodule Money.Mixfile do
   defp description do
     """
     Elixir library for working with Money safer, easier, and fun, is an interpretation of the Fowler's Money pattern in fun.prog.
+    An enhanced version of the original https://github.com/liuggio/money package
     """
   end
 
   defp package do
     [
-     maintainers: ["Giulio De Donato", "Andrew Timberlake"],
-     contributors: ["Giulio De Donato", "Andrew Timberlake"],
+     maintainers: ["Steve Ops"],
+     contributors: ["Steve Ops"],
      licenses: ["MIT"],
      links: %{"GitHub" => @github_url}]
   end
